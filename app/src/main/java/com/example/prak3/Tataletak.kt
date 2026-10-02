@@ -117,4 +117,10 @@ fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
         }
     }
 }
-
+@Preview(showBackground = true)
+@Composable
+fun TataletakPreview() {
+    Prak3Theme {
+        TataletakBoxColumnRow()
+    }
+}
