@@ -29,4 +29,16 @@ fun TataletakComm(modifier: Modifier = Modifier) {
         Text(text = "Komponen4")
     }
 }
+// 2. Tata Letak Row
+@Composable
+fun TataletakRow(modifier: Modifier = Modifier) {
+    Row(
+        modifier = modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceEvenly
+    ) {
+        Text(text = "Komponen1")
+        Text(text = "Komponen2")
+        Text(text = "Komponen3")
+    }
+}
 
