@@ -73,3 +73,10 @@ fun TugasLoginScreen() {
             )
 
             Spacer(modifier = Modifier.height(20.dp))
+            // Label "Nama" (Warna Merah)
+            Text(
+                text = "Nama",
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Red
+            )
