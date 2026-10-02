@@ -105,4 +105,15 @@ fun TugasLoginScreen() {
                     .background(Color.LightGray),
                 contentAlignment = Alignment.Center
             ) {
+                Image(
+                    painter = painterResource(id = R.drawable.foto_profil), // Pastikan file foto ada di folder res/drawable
+                    contentDescription = "Foto Profil",
+                    modifier = Modifier.fillMaxSize(),
+                    contentScale = ContentScale.Crop
+                )
+            }
+        }
+    }
+}
+
 
