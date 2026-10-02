@@ -64,3 +64,12 @@ fun TugasLoginScreen() {
             )
 
             Spacer(modifier = Modifier.height(28.dp))
+
+            // Logo Universitas
+            Image(
+                painter = painterResource(id = R.drawable.logo_umy), // Pastikan file logo ada di folder res/drawable
+                contentDescription = "Logo Universitas",
+                modifier = Modifier.size(100.dp)
+            )
+
+            Spacer(modifier = Modifier.height(20.dp))
