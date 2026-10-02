@@ -56,3 +56,11 @@ fun TugasLoginScreen() {
                 fontWeight = FontWeight.Bold,
                 color = Color(0xFF0047AB)
             )
+            // Sub-teks
+            Text(
+                text = "Ini adalah halaman login,",
+                fontSize = 14.sp,
+                color = Color.DarkGray
+            )
+
+            Spacer(modifier = Modifier.height(28.dp))
