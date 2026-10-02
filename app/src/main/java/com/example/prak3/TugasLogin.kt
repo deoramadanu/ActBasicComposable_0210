@@ -97,4 +97,12 @@ fun TugasLoginScreen() {
             )
 
             Spacer(modifier = Modifier.height(30.dp))
+            // Foto Profil Lingkaran di Bagian Bawah
+            Box(
+                modifier = Modifier
+                    .size(150.dp)
+                    .clip(CircleShape)
+                    .background(Color.LightGray),
+                contentAlignment = Alignment.Center
+            ) {
 
