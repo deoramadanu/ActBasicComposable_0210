@@ -80,3 +80,21 @@ fun TugasLoginScreen() {
                 fontWeight = FontWeight.Bold,
                 color = Color.Red
             )
+            // Nama Lengkap Mahasiswa
+            Text(
+                text = "Alfilla Deo Ramadanu",
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color(0xFF0047AB)
+            )
+
+            // Nomor Induk Mahasiswa (NIM)
+            Text(
+                text = "20240140210",
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
+            )
+
+            Spacer(modifier = Modifier.height(30.dp))
+
