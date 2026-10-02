@@ -27,4 +27,17 @@ class TugasLoginActivity : ComponentActivity() {
         }
     }
 }
-
+@Composable
+fun TugasLoginScreen() {
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color.White)
+    ) {
+        // Latar Belakang Gambar / Ornamen
+        Image(
+            painter = painterResource(id = R.drawable.bg_bangunan), // Pastikan file gambar ada di folder res/drawable
+            contentDescription = "Background",
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop
+        )
