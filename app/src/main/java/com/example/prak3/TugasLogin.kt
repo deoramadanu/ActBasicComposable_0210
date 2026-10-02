@@ -49,3 +49,10 @@ fun TugasLoginScreen() {
             verticalArrangement = Arrangement.Top
         ) {
             Spacer(modifier = Modifier.height(40.dp))
+            // Judul Login (Warna Biru)
+            Text(
+                text = "Login",
+                fontSize = 32.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color(0xFF0047AB)
+            )
