@@ -41,4 +41,48 @@ fun TataletakRow(modifier: Modifier = Modifier) {
         Text(text = "Komponen3")
     }
 }
+// 3. Tata Letak Box & Column & Row Kompleks
+@Composable
+fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
+    val gambar =
+        painterResource(id = R.drawable.notasinaton) // Pastikan file gambar ada di drawable
+
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .padding(16.dp)
+    ) {
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(110.dp)
+                .background(color = Color.Yellow),
+            contentAlignment = Alignment.Center
+        ) {
+            Text(text = "Box 1 - Header", fontWeight = FontWeight.Bold)
+        }
+
+        Spacer(modifier = Modifier.height(10.dp))
+
+        Column(
+            modifier = Modifier.fillMaxWidth(),
+            verticalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
+                Text(text = "Col1 Row1 Komponen1")
+                Text(text = "Col1 Row1 Komponen2")
+                Text(text = "Col1 Row1 Komponen3")
+            }
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
+                Text(text = "Col1 Row2 Komponen1")
+                Text(text = "Col1 Row2 Komponen2")
+                Text(text = "Col1 Row2 Komponen3")
+            }
+        }
 
